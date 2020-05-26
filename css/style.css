@@ -43,7 +43,8 @@ body {
 .greetings {
   height: 100%;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
 }
 
 .greetings-heading {
