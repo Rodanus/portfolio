@@ -45,3 +45,9 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
 }
+
+.greetings-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 43px;
+}
