@@ -38,3 +38,9 @@ body {
 .capital {
   text-transform: capitalize;
 }
+
+.greetings {
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
