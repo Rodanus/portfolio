@@ -28,8 +28,16 @@ body {
   height: 100%;
   visibility: hidden;
   flex-direction: column;
-  justify-content: space-around;
   text-align: center;
+}
+
+.nav-link,
+.nav-link-content {
+  display: block;
+}
+
+.nav-link-content {
+  padding: 64px 0;
 }
 
 .flex {
