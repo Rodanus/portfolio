@@ -40,7 +40,6 @@ body {
 
 .nav-list {
   list-style-type: none;
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -52,6 +51,11 @@ body {
   flex-direction: column;
   text-align: center;
   transition: opacity 0.3s, height 0.3s;
+}
+
+.menu-button,
+.nav-list {
+  position: fixed;
 }
 
 .nav-link,
