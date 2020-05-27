@@ -17,6 +17,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.menu-button,
 .close-button {
   background-color: transparent;
   outline: none;
@@ -27,6 +28,7 @@ body {
   top: 3px;
 }
 
+.menu-button-img,
 .close-button-img {
   min-width: 31px;
   padding: 6px;
