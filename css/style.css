@@ -7,7 +7,11 @@
 
 html,
 body,
-main {
+main,
+.greetings,
+.about,
+.skills,
+.contact {
   height: 100%;
 }
 
