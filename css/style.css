@@ -105,3 +105,10 @@ body {
 .arrow-down-icon {
   width: 45px;
 }
+
+/* Used to show hidden elements  */
+.show {
+  height: 100%;
+  visibility: visible;
+  opacity: 1;
+}
