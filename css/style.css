@@ -94,3 +94,12 @@ body {
 .webpage-ui-design {
   width: 300px;
 }
+
+.arrow-down-con {
+  position: absolute;
+  bottom: 20px;
+}
+
+.arrow-down-icon {
+  width: 45px;
+}
