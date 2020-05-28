@@ -115,6 +115,34 @@ body {
   width: 45px;
 }
 
+/* Remove later */
+.about {
+  padding: 10px;
+}
+
+.about-info-con {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.personal-pic {
+  margin-bottom: 44px;
+  border-radius: 90px;
+}
+
+.left-quote {
+  align-self: flex-start;
+}
+
+.my-journey {
+  padding: 7px;
+}
+
+.right-quote {
+  align-self: flex-end;
+}
+
 /* Used to show hidden elements  */
 .show {
   height: 100%;
