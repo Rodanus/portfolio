@@ -11,7 +11,8 @@ main,
 .greetings,
 .about,
 .skills,
-.contact {
+.contact,
+.about-info-con {
   height: 100%;
 }
 
