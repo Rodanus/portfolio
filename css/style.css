@@ -149,3 +149,8 @@ body {
   visibility: visible;
   opacity: 1;
 }
+
+/* Used for sections headings */
+.sections-heading {
+  font-size: 2.5rem;
+}
