@@ -143,6 +143,19 @@ body {
   align-self: flex-end;
 }
 
+.skills-logos {
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skills-logo-con {
+  width: 50%;
+  height: 25%;
+  justify-content: center;
+  align-content: center;
+}
+
 /* Used to show hidden elements  */
 .show {
   height: 100%;
