@@ -156,6 +156,44 @@ body {
   align-content: center;
 }
 
+/*** Projects section ***/
+.project {
+  width: 364px;
+  margin: auto;
+  padding: 90px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-bottom: 4px solid #515151;
+}
+
+.project:last-child {
+  border: none;
+}
+
+.project-img {
+  border-radius: 18px;
+  margin-bottom: 9px;
+}
+
+.project-name {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.project-description {
+  width: 308px;
+  margin-bottom: 20px;
+}
+
+.project-links-con {
+  width: 43%;
+  justify-content: space-between;
+}
+
+.project-link {
+  color: white;
+}
+
 /* Used to show hidden elements  */
 .show {
   height: 100%;
