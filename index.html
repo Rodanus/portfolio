@@ -217,33 +217,39 @@
         </section>
       </section>
 
-      <section class="contact">
-        <h1 class="contact-heading"><span class="capital">contact</span></h1>
+      <section id="contact" class="contact">
+        <h1 class="contact-heading sections-heading">
+          <span class="capital">contact</span>
+        </h1>
 
-        <div class="contact-form-con">
-          <h2 class="say-hi"><span class="capital">say</span> hi!</h2>
-          <form class="contact-form">
-            <input
-              type="text"
-              name="name"
-              class="name text-field"
-              placeholder="your name:"
-            />
-            <input
-              type="email"
-              name="email"
-              class="email"
-              placeholder="your email: "
-            />
+        <div class="form-container flex">
+          <div class="contact-form-con">
+            <h2 class="say-hi"><span class="capital">say</span> hi!</h2>
+            <form class="contact-form flex">
+              <div class="inputs-con">
+                <input
+                  type="text"
+                  name="name"
+                  class="name text-field"
+                  placeholder="your name:"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  class="email text-field"
+                  placeholder="your email: "
+                />
 
-            <textarea
-              name="message"
-              class="message"
-              placeholder="your message: "
-            ></textarea>
+                <textarea
+                  name="message"
+                  class="message"
+                  placeholder="your message: "
+                ></textarea>
+              </div>
 
-            <input type="submit" class="submit-button" />
-          </form>
+              <input type="submit" class="submit-button" />
+            </form>
+          </div>
         </div>
       </section>
 
