@@ -13,6 +13,10 @@
       navMenu.classList.toggle("show");
       arrowDown.style.visibility = visible ? "visible" : "hidden";
       visible = !visible;
+    } else if (e.target.classList.contains("nav-link-content")) {
+      navMenu.classList.toggle("show");
+      arrowDown.style.visibility = visible ? "visible" : "hidden";
+      visible = !visible;
     }
   });
 })();
