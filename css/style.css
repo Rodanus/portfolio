@@ -69,6 +69,7 @@ body {
   text-decoration: none;
   font-weight: bold;
   font-size: 1.4rem;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .nav-link:active {
