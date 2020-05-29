@@ -5,18 +5,20 @@
 
   let visible = false;
 
+  function showOrHideNav() {
+    navMenu.classList.toggle("show");
+    arrowDown.style.visibility = visible ? "visible" : "hidden";
+    visible = !visible;
+  }
+
   document.addEventListener("click", e => {
     if (
       e.target.classList.contains("menu-button-img") ||
       e.target.classList.contains("close-button-img")
     ) {
-      navMenu.classList.toggle("show");
-      arrowDown.style.visibility = visible ? "visible" : "hidden";
-      visible = !visible;
+      showOrHideNav();
     } else if (e.target.classList.contains("nav-link-content")) {
-      navMenu.classList.toggle("show");
-      arrowDown.style.visibility = visible ? "visible" : "hidden";
-      visible = !visible;
+      showOrHideNav();
     }
   });
 })();
