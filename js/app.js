@@ -1,5 +1,5 @@
 (function () {
-  const body = document.getElementsByTagName("BODY"),
+  const body = document.querySelector("body"),
     navMenu = document.querySelector(".nav-list"),
     arrowDown = document.querySelector(".arrow-down-con");
 
@@ -8,6 +8,7 @@
   function showOrHideNav() {
     navMenu.classList.toggle("show");
     arrowDown.style.visibility = visible ? "visible" : "hidden";
+    body.style.overflow = visible ? "auto" : "hidden";
     visible = !visible;
   }
 
