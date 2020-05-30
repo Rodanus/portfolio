@@ -20,6 +20,12 @@ body {
   background-color: black;
   color: white;
   font-family: "Roboto", sans-serif;
+  width: 90%;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
 }
 
 .menu-button,
@@ -159,7 +165,7 @@ body {
 
 /*** Projects section ***/
 .project {
-  width: 364px;
+  width: 100%;
   margin: auto;
   padding: 90px 0;
   flex-wrap: wrap;
@@ -174,6 +180,7 @@ body {
 .project-img {
   border-radius: 18px;
   margin-bottom: 9px;
+  width: 100%;
 }
 
 .project-name {
@@ -182,7 +189,7 @@ body {
 }
 
 .project-description {
-  width: 308px;
+  width: 97%;
   margin-bottom: 20px;
 }
 
