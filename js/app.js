@@ -5,10 +5,21 @@
 
   let visible = false;
 
+  function enableScrollingOnIOS() {
+    document.ontouchmove = e => {
+      e.preventDefault();
+    };
+  }
+
+  function disableScrollingOnIOS() {
+    document.ontouchmove = () => true;
+  }
+
   function showOrHideNav() {
     navMenu.classList.toggle("show");
     arrowDown.style.visibility = visible ? "visible" : "hidden";
     body.style.overflow = visible ? "auto" : "hidden";
+    visible ? disableScrollingOnIOS() : enableScrollingOnIOS();
     visible = !visible;
   }
 
