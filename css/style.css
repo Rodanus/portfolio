@@ -179,6 +179,10 @@ input {
   border-bottom: 4px solid #515151;
 }
 
+.project:first-of-type {
+  padding-top: 65px;
+}
+
 .project:last-child {
   border: none;
 }
