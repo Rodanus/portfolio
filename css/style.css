@@ -327,3 +327,10 @@ input {
 .sections-heading {
   font-size: 2.5rem;
 }
+
+/* Media Queries */
+@media screen and (min-width: 380px) {
+  .contact-form-con {
+    width: 358px;
+  }
+}
