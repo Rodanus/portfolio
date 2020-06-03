@@ -139,6 +139,10 @@ input {
   align-content: center;
 }
 
+.pic-about {
+  text-align: center;
+}
+
 .personal-pic {
   margin-bottom: 44px;
   border-radius: 90px;
