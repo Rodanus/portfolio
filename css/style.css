@@ -438,5 +438,7 @@ input {
     width: 80px;
   }
 
-  /* Todo: Make sure the links for each projct are not too far from each other */
+  .project-links-con {
+    width: 45%;
+  }
 }
