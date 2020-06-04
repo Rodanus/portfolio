@@ -401,4 +401,23 @@ input {
 }
 
 @media screen and (min-width: 992px) {
+  .greetings {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .greetings-heading {
+    width: 50%;
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  .webpage-ui-design {
+    width: 45%;
+  }
+
+  .arrow-down-con {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
