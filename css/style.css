@@ -433,4 +433,10 @@ input {
   .personal-pic {
     width: 75%;
   }
+
+  .skill-logo {
+    width: 80px;
+  }
+
+  /* Todo: Make sure the links for each projct are not too far from each other */
 }
