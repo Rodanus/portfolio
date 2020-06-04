@@ -420,4 +420,17 @@ input {
     left: 50%;
     transform: translateX(-50%);
   }
+
+  /* About section  */
+  .pic-about {
+    width: 40%;
+  }
+
+  .summary {
+    width: 60%;
+  }
+
+  .personal-pic {
+    width: 75%;
+  }
 }
