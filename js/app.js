@@ -5,6 +5,13 @@
 
   let visible = false;
 
+  function checkWindowSize() {
+    let width = window.innerWidth > 0 ? window.innerWidth : screen.width;
+    if (width >= 1200) {
+      console.log("1200");
+    }
+  }
+
   function enableScrollingOnIOS() {
     document.ontouchmove = e => {
       e.preventDefault();
@@ -33,4 +40,9 @@
       showOrHideNav();
     }
   });
+
+  window.addEventListener("resize", checkWindowSize);
+
+  // To check the window size when the script loads
+  checkWindowSize();
 })();
