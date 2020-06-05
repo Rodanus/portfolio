@@ -434,14 +434,37 @@ input {
     width: 75%;
   }
 
+  /* Skills section */
   .skill-logo {
     width: 80px;
   }
 
+  /* Projects section */
   .project-links-con {
     width: 45%;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  /* Todo: Change to desktop navbar*/
+
+  /* Greetings section  */
+  .greetings-heading {
+    font-size: 4rem;
+  }
+
+  .webpage-ui-design {
+    width: 40%;
+  }
+
+  /* About section */
+  .personal-pic {
+    border-radius: 180px;
+  }
+
+  /* Todo: Change the skills section to the desktop one */
+
+  /* Todo: Change the projects section to the desktop one */
+
+  /* Todo: Specify the footer links with a spicific width */
 }
