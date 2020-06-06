@@ -446,6 +446,42 @@ input {
 
 @media screen and (min-width: 1200px) {
   /* Todo: Change to desktop navbar*/
+  .header {
+    position: fixed;
+    right: 85px;
+    width: 100%;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav-list {
+    visibility: visible;
+    display: flex;
+    position: static;
+    width: 40%;
+    opacity: 1;
+    flex-direction: row;
+    transform: translate(0, 0);
+    justify-content: space-between;
+  }
+
+  .close-button,
+  .menu-button {
+    visibility: hidden;
+    display: none;
+  }
+
+  .nav-link {
+    padding-top: 40px;
+  }
+
+  .nav-link-content {
+    padding: 0;
+    border: none;
+  }
 
   /* Greetings section  */
   .greetings-heading {
