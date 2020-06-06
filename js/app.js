@@ -3,13 +3,11 @@
     navMenu = document.querySelector(".nav-list"),
     arrowDown = document.querySelector(".arrow-down-con");
 
-  let visible = false;
+  let visible = false,
+    width = window.innerWidth > 0 ? window.innerWidth : screen.width;
 
   function checkWindowSize() {
-    let width = window.innerWidth > 0 ? window.innerWidth : screen.width;
-    if (width >= 1200) {
-      console.log("1200");
-    }
+    width = window.innerWidth > 0 ? window.innerWidth : screen.width;
   }
 
   function enableScrollingOnIOS() {
@@ -23,11 +21,13 @@
   }
 
   function showOrHideNav() {
-    navMenu.classList.toggle("show");
-    arrowDown.style.visibility = visible ? "visible" : "hidden";
-    body.style.overflow = visible ? "auto" : "hidden";
-    visible ? disableScrollingOnIOS() : enableScrollingOnIOS();
-    visible = !visible;
+    if (width < 1200) {
+      navMenu.classList.toggle("show");
+      arrowDown.style.visibility = visible ? "visible" : "hidden";
+      body.style.overflow = visible ? "auto" : "hidden";
+      visible ? disableScrollingOnIOS() : enableScrollingOnIOS();
+      visible = !visible;
+    }
   }
 
   document.addEventListener("click", e => {
