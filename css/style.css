@@ -534,7 +534,30 @@ input {
     width: 80%;
   }
 
-  /* Todo: Change the projects section to the desktop one */
+  /* Projects section */
+  .projects {
+    height: 100%;
+    display: grid;
+    align-items: flex-start;
+  }
+
+  .projects-con {
+    flex-wrap: nowrap;
+  }
+
+  .project {
+    width: 25%;
+  }
+
+  .project:last-child {
+    margin: auto;
+  }
+
+  .project-links-con {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   /* Todo: Specify the footer links with a spicific width */
 }
