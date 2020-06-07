@@ -495,6 +495,11 @@ input {
   }
 
   /* About section */
+  .my-journey {
+    font-size: 1.5rem;
+  }
+
+  /* Skills section */
   .skills {
     height: 50%;
     margin-bottom: 79px;
@@ -503,7 +508,6 @@ input {
     justify-content: space-evenly;
   }
 
-  /* Todo: Change the skills section to the desktop one */
   .skills-logos {
     height: 50%;
     display: grid;
