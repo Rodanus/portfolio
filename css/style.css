@@ -145,7 +145,7 @@ input {
 .personal-pic {
   width: 171px;
   margin-bottom: 10px;
-  border-radius: 107px;
+  border-radius: 50%;
 }
 
 .left-quote {
@@ -367,7 +367,6 @@ input {
 
   .personal-pic {
     width: 90%;
-    border-radius: 150px;
     margin-bottom: 0;
   }
 
@@ -496,10 +495,6 @@ input {
   }
 
   /* About section */
-  .personal-pic {
-    border-radius: 180px;
-  }
-
   .skills {
     height: 50%;
     margin-bottom: 79px;
