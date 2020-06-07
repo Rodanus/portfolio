@@ -445,7 +445,10 @@ input {
 }
 
 @media screen and (min-width: 1200px) {
-  /* Todo: Change to desktop navbar*/
+  .sections-heading {
+    font-size: 4rem;
+  }
+
   .header {
     position: fixed;
     right: 85px;
