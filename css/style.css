@@ -505,15 +505,15 @@ input {
 
   /* Skills section */
   .skills {
-    height: 50%;
+    height: 90%;
     margin-bottom: 79px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
   }
 
   .skills-logos {
-    height: 50%;
+    height: 220px;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     justify-items: center;
