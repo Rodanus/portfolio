@@ -564,6 +564,10 @@ input {
   }
 
   /* Contact section  */
+  .contact {
+    height: 90%;
+  }
+
   .contact-form-con {
     width: 458px;
     height: 504px;
