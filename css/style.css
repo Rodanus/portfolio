@@ -482,7 +482,7 @@ input {
   }
 
   .nav-link {
-    padding-top: 40px;
+    padding: 20px 0;
   }
 
   .nav-link-content {
