@@ -462,12 +462,15 @@ input {
   .nav {
     display: flex;
     justify-content: flex-end;
+    padding-right: 5rem;
+    background: rgba(34, 34, 34, 0.8196078431372549);
   }
 
   .nav-list {
     visibility: visible;
     display: flex;
     position: static;
+    background-color: transparent;
     width: 40%;
     opacity: 1;
     flex-direction: row;
