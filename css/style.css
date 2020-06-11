@@ -38,6 +38,12 @@ input {
   appearance: none;
 }
 
+/* To avoid zooming on IOS devices when typing the fields */
+input,
+textarea {
+  font-size: 17px;
+}
+
 .menu-button,
 .close-button {
   background-color: transparent;
