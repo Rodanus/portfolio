@@ -30,6 +30,17 @@
     }
   }
 
+  /*
+   * To make sure navbar is displayed correctly on IOS devices
+   * Credits:
+   * https://medium.com/@susiekim9/how-to-compensate-for-the-ios-viewport-unit-bug-46e78d54af0d
+   * https://stackoverflow.com/questions/43575363/css-100vh-is-too-tall-on-mobile-due-to-browser-ui
+   */
+  function resetHeight() {
+    // Change the body height to match the inner height of the browser
+    document.body.style.height = window.innerHeight;
+  }
+
   document.addEventListener("click", e => {
     if (
       e.target.classList.contains("menu-button-img") ||
@@ -41,8 +52,16 @@
     }
   });
 
-  window.addEventListener("resize", checkWindowSize);
+  window.addEventListener("resize", () => {
+    checkWindowSize();
+
+    // Reset the height whenever the user resizes the window
+    resetHeight();
+  });
 
   // To check the window size when the script loads
   checkWindowSize();
+
+  // To set the page height when it first loads.
+  resetHeight();
 })();
