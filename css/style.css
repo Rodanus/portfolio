@@ -316,6 +316,11 @@ textarea {
   background-color: white;
 }
 
+.submit-button:hover {
+  cursor: pointer;
+  background-color: rgb(194, 194, 194);
+}
+
 /* footer */
 .page-footer {
   justify-content: center;
