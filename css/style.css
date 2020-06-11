@@ -544,6 +544,7 @@ textarea {
 
   .big-logo {
     width: 80%;
+    max-width: 100px; /* To make logos stop growing and looking weird on big screens */
   }
 
   /* Projects section */
