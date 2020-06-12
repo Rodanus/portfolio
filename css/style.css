@@ -87,10 +87,6 @@ textarea {
   transition: background-color 0.3s;
 }
 
-.nav-item:hover {
-  background-color: rgb(61, 61, 61);
-}
-
 .nav-link,
 .nav-link-content {
   display: block;
@@ -103,10 +99,6 @@ textarea {
   font-weight: bold;
   font-size: 1.4rem;
   -webkit-tap-highlight-color: transparent;
-}
-
-.nav-link:active {
-  text-decoration: underline;
 }
 
 .nav-link-content {
@@ -486,7 +478,6 @@ textarea {
   .nav {
     display: flex;
     justify-content: flex-end;
-    background: rgba(34, 34, 34, 0.8196078431372549);
   }
 
   .nav-list {
@@ -506,6 +497,11 @@ textarea {
     display: none;
   }
 
+  .nav-item:hover span {
+    transition: border 0.1s ease-in;
+    border-bottom: 3px solid white;
+  }
+
   .nav-link {
     padding: 20px 20px;
   }
@@ -513,6 +509,7 @@ textarea {
   .nav-link-content {
     padding: 0;
     border: none;
+    text-shadow: 1px 1px 3px black;
   }
 
   /* Greetings section  */
