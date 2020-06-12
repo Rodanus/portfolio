@@ -336,7 +336,8 @@ textarea {
   width: 30px;
 }
 
-.twitter-link {
+.footer-link,
+.email-link {
   align-self: flex-end;
 }
 
