@@ -23,8 +23,8 @@
   function showOrHideNav() {
     if (width < 1200) {
       navMenu.classList.toggle("show");
-      arrowDown.style.visibility = visible ? "visible" : "hidden";
-      body.style.overflow = visible ? "auto" : "hidden";
+      arrowDown.classList.toggle("vis-hidden");
+      body.classList.toggle("overf-hidden");
       visible ? disableScrollingOnIOS() : enableScrollingOnIOS();
       visible = !visible;
     }
