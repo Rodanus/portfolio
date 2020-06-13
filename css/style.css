@@ -482,8 +482,9 @@ textarea {
 
   .header {
     position: fixed;
-    width: 50%;
+    width: 36%;
     right: 0;
+    margin-right: 4.999%;
   }
 
   .nav {
