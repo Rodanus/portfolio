@@ -44,6 +44,11 @@ textarea {
   font-size: 17px;
 }
 
+/* For links */
+.link {
+  color: white;
+}
+
 .menu-button,
 .close-button {
   background-color: transparent;
