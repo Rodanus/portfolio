@@ -28,6 +28,10 @@ body {
   margin: auto;
 }
 
+section:not(:last-of-type) {
+  margin-bottom: 7vh;
+}
+
 img {
   max-width: 100%;
 }
