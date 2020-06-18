@@ -626,6 +626,10 @@ textarea {
     padding: 10px;
   }
 
+  .form-container {
+    top: 41%;
+  }
+
   .contact-form {
     /* height: 100%; */
   }
