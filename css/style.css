@@ -48,6 +48,10 @@ textarea {
   font-size: 17px;
 }
 
+textarea {
+  resize: none;
+}
+
 /* For links */
 .link {
   color: white;
