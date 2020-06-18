@@ -28,7 +28,7 @@ body {
   margin: auto;
 }
 
-section:not(:last-of-type) {
+section:not(.project):not(.contact) {
   margin-bottom: 7vh;
 }
 
