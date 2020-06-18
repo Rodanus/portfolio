@@ -598,15 +598,23 @@ textarea {
   }
 
   .projects-con {
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .project {
-    width: 25%;
+    width: 90%;
+    padding: 0;
+    margin: 0;
+    justify-self: center;
+  }
+
+  .project:first-of-type {
+    padding: 0;
   }
 
   .project:last-child {
-    margin: auto;
+    margin: 0;
   }
 
   .project-links-con {
