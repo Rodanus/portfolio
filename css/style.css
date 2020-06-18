@@ -213,10 +213,6 @@ textarea {
   border-bottom: 4px solid #515151;
 }
 
-.project:first-of-type {
-  padding-top: 65px;
-}
-
 .project:last-child {
   border: none;
 }
@@ -423,22 +419,24 @@ textarea {
   }
 
   .projects-con {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-heading {
+    margin-bottom: 7%;
   }
 
   .project {
-    width: 40%;
+    width: 80%;
     border: none;
     padding: none;
+    margin: 0;
+    justify-self: center;
   }
 
   .project:first-of-type {
     padding: 90px 0;
-  }
-
-  .project:last-child {
-    margin: 0 0 0 4.999%;
   }
 
   .project-links-con {
