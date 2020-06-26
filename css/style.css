@@ -594,7 +594,7 @@ textarea {
 
   /* Projects section */
   .projects {
-    height: 100%;
+    height: auto;
     display: grid;
     align-items: flex-start;
   }
