@@ -206,8 +206,8 @@ textarea {
 /*** Projects section ***/
 .project {
   position: relative;
-  width: 100%;
-  height: 90vw;
+  width: 258.394px;
+  height: 258.394px;
   display: flex;
   background: white;
   color: black;
@@ -215,7 +215,7 @@ textarea {
   flex-direction: column;
   justify-content: space-between;
   padding: 0.8rem;
-  margin: 6rem 0 6rem -0.4rem;
+  margin: 6rem auto;
 }
 
 .project::after {
