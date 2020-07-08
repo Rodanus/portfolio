@@ -247,6 +247,14 @@ textarea {
   height: 60px;
 }
 
+.memory-game-name::before {
+  height: 95px;
+}
+
+.classic-arcade-game-name::before {
+  height: 132px;
+}
+
 .project-link {
   color: black;
   text-decoration: none;
