@@ -461,6 +461,10 @@ textarea {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .project-con:last-child {
+    margin-bottom: 6rem;
+  }
+
   .project {
     margin-bottom: 0;
   }
