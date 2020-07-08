@@ -215,7 +215,7 @@ textarea {
   flex-direction: column;
   justify-content: space-between;
   padding: 0.8rem;
-  margin-left: -0.4rem;
+  margin: 6rem 0 6rem -0.4rem;
 }
 
 .project::after {
