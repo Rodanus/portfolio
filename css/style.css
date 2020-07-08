@@ -461,26 +461,6 @@ textarea {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .projects-heading {
-    margin-bottom: 7%;
-  }
-
-  .project {
-    width: 80%;
-    border: none;
-    padding: none;
-    margin: 0;
-    justify-self: center;
-  }
-
-  .project:first-of-type {
-    padding: 90px 0;
-  }
-
-  .project-links-con {
-    width: 65%;
-  }
-
   .footer-links-con {
     width: 23%;
   }
