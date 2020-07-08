@@ -428,9 +428,6 @@ textarea {
 }
 
 @media screen and (min-width: 480px) {
-  .project {
-    width: 432px;
-  }
 }
 
 @media screen and (min-width: 768px) {
