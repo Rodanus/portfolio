@@ -619,36 +619,8 @@ textarea {
   }
 
   /* Projects section */
-  .projects {
-    height: auto;
-    display: grid;
-    align-items: flex-start;
-  }
-
   .projects-con {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .project {
-    width: 90%;
-    padding: 0;
-    margin: 0 0 4rem;
-    justify-self: center;
-  }
-
-  .project:first-of-type {
-    padding: 0;
-  }
-
-  .project:last-child {
-    margin: 0;
-  }
-
-  .project-links-con {
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
   }
 
   /* Contact section  */
