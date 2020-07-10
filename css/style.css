@@ -381,16 +381,20 @@ textarea {
 }
 
 .footer-links-con {
-  width: 43%;
+  width: 50%;
   justify-content: space-between;
 }
 
 .footer-link {
-  padding: 10px;
+  padding: 10px 0;
 }
 
 .footer-link-logo {
-  width: 30px;
+  width: 25px;
+}
+
+.github-svg {
+  fill: #fff;
 }
 
 .footer-link,
