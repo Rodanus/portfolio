@@ -67,6 +67,11 @@ textarea {
   top: 3px;
 }
 
+.menu-button-img {
+  background: #000;
+  border-radius: 9px;
+}
+
 .menu-button-img,
 .close-button-img {
   min-width: 31px;
