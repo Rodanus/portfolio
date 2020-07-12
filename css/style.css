@@ -348,9 +348,6 @@ textarea {
 
 /* Media Queries */
 @media screen and (min-width: 380px) {
-  .contact-form-con {
-    width: 358px;
-  }
 }
 
 @media screen and (min-width: 480px) {
