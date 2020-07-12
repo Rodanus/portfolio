@@ -67,6 +67,11 @@ textarea {
   top: 3px;
 }
 
+.menu-button-img {
+  background: #000;
+  border-radius: 9px;
+}
+
 .menu-button-img,
 .close-button-img {
   min-width: 31px;
@@ -215,6 +220,7 @@ textarea {
   justify-content: space-between;
   padding: 0.8rem;
   margin: 6rem auto;
+  z-index: -1;
 }
 
 .project::after {
