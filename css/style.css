@@ -215,6 +215,7 @@ textarea {
   justify-content: space-between;
   padding: 0.8rem;
   margin: 6rem auto;
+  z-index: -1;
 }
 
 .project::after {
