@@ -550,26 +550,7 @@ textarea {
   }
 
   /* Contact section  */
-  .contact {
-    height: 90%;
-  }
-
-  .contact-form-con {
-    width: 458px;
-    /* height: 100%; */
-    padding: 10px;
-  }
-
-  .form-container {
-    top: 41%;
-  }
-
-  .contact-form {
-    /* height: 100%; */
-  }
-
-  .say-hi {
-    font-size: 3rem;
-    padding: 0;
+  .contact-email-link {
+    font-size: 1.2rem;
   }
 }
