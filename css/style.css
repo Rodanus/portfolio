@@ -106,6 +106,7 @@ textarea {
 .menu-button,
 .nav-list {
   position: fixed;
+  z-index: 1;
 }
 
 .nav-item {
@@ -229,7 +230,6 @@ textarea {
   justify-content: space-between;
   padding: 0.8rem;
   margin: 6rem auto;
-  z-index: -1;
 }
 
 .project::after {
