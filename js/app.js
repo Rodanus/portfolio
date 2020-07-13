@@ -1,6 +1,6 @@
 (function () {
   const body = document.querySelector("body"),
-    navMenu = document.querySelector(".nav-list"),
+    navMenu = document.querySelector(".nav"),
     arrowDown = document.querySelector(".arrow-down-con");
 
   let visible = false,
