@@ -475,17 +475,18 @@ textarea {
 
   .nav {
     display: flex;
+    position: static;
     justify-content: flex-end;
+    visibility: visible;
+    opacity: 1;
+    background: transparent;
+    transform: translate(0, 0);
   }
 
   .nav-list {
-    visibility: visible;
     display: flex;
-    position: static;
     background-color: transparent;
-    opacity: 1;
     flex-direction: row;
-    transform: translate(0, 0);
     justify-content: space-between;
   }
 
