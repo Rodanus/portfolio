@@ -87,24 +87,28 @@ textarea {
   padding: 6px;
 }
 
-.nav-list {
-  list-style-type: none;
+.nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: black;
   width: 100%;
-  height: 0%;
+  background-color: black;
   opacity: 0;
   visibility: hidden;
+  z-index: 2;
+  transition: opacity 0.3s, height 0.3s;
+}
+
+.nav-list {
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
   flex-direction: column;
   text-align: center;
-  transition: opacity 0.3s, height 0.3s;
-  z-index: 2;
 }
 
 .menu-button,
-.nav-list {
+.nav {
   position: fixed;
   z-index: 1;
 }
