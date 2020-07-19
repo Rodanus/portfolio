@@ -5,6 +5,53 @@
   /* outline: 1px solid skyblue; */
 }
 
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: black;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#rc {
+  stroke: #fff;
+  stroke-width: 5px;
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+  animation: drawtext 1.5s linear forwards 0.5s;
+}
+
+.rc {
+  width: 60%;
+  animation: svg 1s ease-in forwards 1.6s;
+}
+
+@keyframes drawtext {
+  from {
+    stroke-dashoffset: 2000;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes svg {
+  from {
+    fill: transparent;
+  }
+
+  to {
+    fill: #fff;
+  }
+}
+
 html,
 body,
 main,
@@ -25,6 +72,7 @@ body {
   font-family: "Roboto", sans-serif;
   width: 90%;
   margin: auto;
+  overflow-x: hidden;
 }
 
 h1,
