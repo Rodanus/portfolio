@@ -1,0 +1,13 @@
+dist
+
+portfolioAssets
+
+node_modules
+
+TODO.md
+.vscode/
+
+package-lock.json
+
+redux-logo-learning.svg
+react-logo-learning.svg
