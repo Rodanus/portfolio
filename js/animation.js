@@ -100,6 +100,7 @@ gsap.from(".skill-logo", {
 });
 
 const endOfPageTl = gsap.timeline({
+  defaults: { duration: 1, stagger: 0.6 },
   scrollTrigger: {
     trigger: ".projects",
     start: "top center"
@@ -108,17 +109,13 @@ const endOfPageTl = gsap.timeline({
 
 endOfPageTl
   .from(".project", {
-    duration: 1,
     scale: 0.9,
-    autoAlpha: 0,
-    stagger: 0.6
+    autoAlpha: 0
   })
   .from(".contact-email", {
     duration: 1,
     autoAlpha: 0
   })
   .from(".footer-link", {
-    duration: 1,
-    autoAlpha: 0,
-    stagger: 0.6
+    autoAlpha: 0
   });
