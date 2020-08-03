@@ -113,7 +113,7 @@ endOfPageTl
     autoAlpha: 0
   })
   .from(".contact-email", {
-    duration: 1,
+    duration: 0.4,
     autoAlpha: 0
   })
   .from(".footer-link", {
