@@ -111,7 +111,7 @@ endOfPageTl
     duration: 1,
     scale: 0.9,
     autoAlpha: 0,
-    stagger: 0.8
+    stagger: 0.6
   })
   .from(".contact-email", {
     duration: 1,
