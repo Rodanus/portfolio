@@ -120,13 +120,13 @@ textarea {
   border: none;
   position: absolute;
   padding: 15px;
-  right: 3px;
-  top: 3px;
+  right: 4px;
+  top: 4px;
 }
 
 .menu-button-img {
   background: #000;
-  border-radius: 9px;
+  border-radius: 4px;
 }
 
 .menu-button-img,
