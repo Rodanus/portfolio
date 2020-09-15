@@ -183,6 +183,21 @@ textarea {
   padding: 0px 0 29px 52px;
 }
 
+.nav-social-links-con {
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-end;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-link-logo {
+  fill: #000;
+  width: 25px;
+}
+
 .flex {
   display: flex;
 }
@@ -375,9 +390,6 @@ textarea {
 
 .footer-link-logo {
   width: 25px;
-}
-
-.github-svg {
   fill: #fff;
 }
 
