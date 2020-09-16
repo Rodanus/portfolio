@@ -500,6 +500,35 @@ textarea {
 }
 
 @media screen and (min-width: 992px) {
+  /**** Navbar ****/
+  .menu-button,
+  .close-button {
+    padding: 0px;
+    right: 70px;
+    top: 70px;
+  }
+
+  .menu-button-img,
+  .close-button-img {
+    width: 45px;
+  }
+
+  .nav-link {
+    font-size: 56px;
+  }
+
+  .nav-link-content {
+    padding: 0 0 54px 120px;
+  }
+
+  .nav-social-links-con {
+    width: 204px;
+  }
+
+  .nav-link-logo {
+    width: 36px;
+  }
+
   .greetings {
     flex-direction: row;
     justify-content: space-between;
