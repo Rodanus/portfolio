@@ -578,49 +578,48 @@ textarea {
     font-size: 4rem;
   }
 
-  .header {
-    position: fixed;
-    width: 36%;
-    right: 0;
-    margin-right: 4.999%;
-  }
-
+  /**** Navbar ****/
   .nav {
-    display: flex;
-    position: static;
-    justify-content: flex-end;
-    visibility: visible;
-    opacity: 1;
+    width: 760px;
+    left: auto;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  .menu-button,
+  .close-button {
+    padding: 0px;
+    right: 60px;
+    top: 40px;
+  }
+
+  .menu-button-img,
+  .close-button-img {
+    width: 20px;
+    min-width: auto;
+    padding: 0;
+  }
+
+  .menu-button-img {
+    width: 30px;
     background: transparent;
-    transform: translate(0, 0);
-  }
-
-  .nav-list {
-    display: flex;
-    background-color: transparent;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .close-button,
-  .menu-button {
-    visibility: hidden;
-    display: none;
-  }
-
-  .nav-item:hover span {
-    transition: border 0.1s ease-in;
-    border-bottom: 3px solid white;
+    border-radius: 0;
   }
 
   .nav-link {
-    padding: 20px 20px;
+    font-size: 54px;
   }
 
   .nav-link-content {
-    padding: 0;
-    border: none;
-    text-shadow: 1px 1px 3px black;
+    padding: 0 0 45px 95px;
+  }
+
+  .nav-social-links-con {
+    width: 160px;
+  }
+
+  .nav-link-logo {
+    width: 26px;
   }
 
   /* Greetings section  */
