@@ -21,13 +21,11 @@
   }
 
   function showOrHideNav() {
-    if (width < 1200) {
-      navMenu.classList.toggle("show");
-      arrowDown.classList.toggle("vis-hidden");
-      body.classList.toggle("overf-hidden");
-      visible ? disableScrollingOnIOS() : enableScrollingOnIOS();
-      visible = !visible;
-    }
+    navMenu.classList.toggle("show");
+    arrowDown.classList.toggle("vis-hidden");
+    body.classList.toggle("overf-hidden");
+    visible ? disableScrollingOnIOS() : enableScrollingOnIOS();
+    visible = !visible;
   }
 
   /*
