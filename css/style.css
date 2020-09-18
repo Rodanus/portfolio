@@ -573,6 +573,7 @@ a[href="#contact"] span {
     padding: 0px;
     right: 60px;
     top: 40px;
+    cursor: pointer;
   }
 
   .menu-button-img,
