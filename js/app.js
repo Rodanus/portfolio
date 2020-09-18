@@ -4,6 +4,7 @@
     arrowDown = document.querySelector(".arrow-down-con");
 
   let visible = false,
+    overlay = null,
     width = window.innerWidth > 0 ? window.innerWidth : screen.width;
 
   function checkWindowSize() {
@@ -20,8 +21,19 @@
     document.ontouchmove = () => true;
   }
 
+  function addOverlayOnDesktop() {
+    if (width >= 1200 && !overlay) {
+      const newOverlay = document.createElement("div"),
+        firstScriptInBody = document.querySelector("script"); // So I can add the overlay before it.
+      newOverlay.classList.add("overlay");
+      document.body.insertBefore(newOverlay, firstScriptInBody);
+      overlay = newOverlay;
+    }
+  }
+
   function showOrHideNav() {
     navMenu.classList.toggle("show");
+    overlay ? overlay.classList.toggle("show") : null;
     arrowDown.classList.toggle("vis-hidden");
     body.classList.toggle("overf-hidden");
     visible ? disableScrollingOnIOS() : enableScrollingOnIOS();
@@ -62,4 +74,7 @@
 
   // To set the page height when it first loads.
   resetHeight();
+
+  // Add overlay when opening the navbar on desktop.
+  addOverlayOnDesktop();
 })();

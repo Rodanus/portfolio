@@ -626,6 +626,19 @@ a[href="#contact"] span {
     width: 26px;
   }
 
+  /* Overlay when using navbar */
+  .overlay {
+    width: calc(100% - 760px);
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 40%);
+    height: 0;
+    visibility: hidden;
+  }
+
   /* Greetings section  */
   .greetings-heading {
     font-size: 4rem;
