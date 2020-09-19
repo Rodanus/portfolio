@@ -613,7 +613,7 @@ a[href="#contact"] span {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0, 0, 0, 40%);
+    background: rgba(0, 0, 0, 0.4);
     height: 0;
     visibility: hidden;
   }
