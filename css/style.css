@@ -402,6 +402,11 @@ a[href="#contact"] span {
   align-self: flex-end;
 }
 
+/* Used for sections headings */
+.sections-heading {
+  font-size: 2.5rem;
+}
+
 /* Media Queries */
 @media screen and (min-width: 380px) {
 }
@@ -694,9 +699,4 @@ a[href="#contact"] span {
 /* To hide elements with JS */
 .overf-hidden {
   overflow: hidden;
-}
-
-/* Used for sections headings */
-.sections-heading {
-  font-size: 2.5rem;
 }
