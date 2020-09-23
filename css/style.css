@@ -180,11 +180,12 @@ textarea {
 }
 
 .nav-link-content {
-  padding: 0px 0 29px 52px;
+  padding: 29px 0 0 52px;
+  transition: font-size 0.2s ease;
 }
 
-a[href="#contact"] span {
-  padding-bottom: 0;
+a[href="#greetings"] span {
+  padding-top: 0;
 }
 
 .nav-social-links-con {
@@ -432,7 +433,7 @@ a[href="#contact"] span {
   }
 
   .nav-link-content {
-    padding: 0 0 45px 89px;
+    padding: 45px 0 0 89px;
   }
 
   .nav-social-links-con {
@@ -505,7 +506,7 @@ a[href="#contact"] span {
   }
 
   .nav-link-content {
-    padding: 0 0 54px 120px;
+    padding: 54px 0 0 120px;
   }
 
   .nav-social-links-con {
@@ -599,7 +600,7 @@ a[href="#contact"] span {
   }
 
   .nav-link-content {
-    padding: 0 0 45px 95px;
+    padding: 45px 0 0 95px;
   }
 
   .nav-social-links-con {
@@ -608,6 +609,11 @@ a[href="#contact"] span {
 
   .nav-link-logo {
     width: 26px;
+  }
+
+  /* Nav links hover */
+  .nav-link-content:hover {
+    font-size: 5rem;
   }
 
   /* Overlay when using navbar */
