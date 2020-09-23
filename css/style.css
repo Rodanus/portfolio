@@ -389,7 +389,8 @@ a[href="#greetings"] span {
   justify-content: space-between;
 }
 
-.footer-link {
+.footer-link,
+.nav-social-link {
   padding: 10px 0;
 }
 
@@ -399,6 +400,7 @@ a[href="#greetings"] span {
 }
 
 .footer-link,
+.nav-social-link,
 .email-link {
   align-self: flex-end;
 }
