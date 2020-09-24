@@ -611,6 +611,10 @@ a[href="#greetings"] span {
 
   .nav-link-logo {
     width: 26px;
+    transition: transform 0.1s ease;
+  }
+  .nav-link-logo:hover {
+    transform: scale(1.2);
   }
 
   /* Nav links hover */
