@@ -56,6 +56,45 @@ gsap.registerPlugin(ScrollTrigger);
 
 const tl = gsap.timeline({ defaults: { duration: 1, autoAlpha: 0 } });
 
+const showNavAnimation = () => {
+  // Check whether it is a desktop or mobile device.
+  const x = width >= 1200 ? 0 : "-50%";
+
+  gsap.to(".nav", {
+    duration: 0.8,
+    ease: "power4",
+    onStart: () => {
+      showOrHideNav();
+    },
+    x
+  });
+};
+
+const hideNavAnimation = () => {
+  gsap.to(".nav", {
+    duration: 1,
+    ease: "power4",
+    x: "100%",
+    onComplete: () => {
+      // TODO: make sure that you enable scrolling before navbar is hidden.
+      showOrHideNav();
+    }
+  });
+};
+
+document.addEventListener("click", e => {
+  const elementClassList = e.target.classList;
+
+  if (elementClassList.contains("menu-button-img")) {
+    showNavAnimation();
+  } else if (
+    elementClassList.contains("close-button-img") ||
+    elementClassList.contains("nav-link-content")
+  ) {
+    hideNavAnimation();
+  }
+});
+
 tl.to(".loading", {
   y: "-100%",
   delay: 3,
