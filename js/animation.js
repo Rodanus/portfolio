@@ -56,6 +56,24 @@ gsap.registerPlugin(ScrollTrigger);
 
 const tl = gsap.timeline({ defaults: { duration: 1, autoAlpha: 0 } });
 
+const showOverlayAnimation = () => {
+  gsap.to(".overlay", {
+    onStart: () => {
+      showOrHideOverlay();
+    },
+    autoAlpha: 1
+  });
+};
+
+const hideOverlayAnimation = () => {
+  gsap.to(".overlay", {
+    autoAlpha: 0,
+    onComplete: () => {
+      showOrHideOverlay();
+    }
+  });
+};
+
 const showNavAnimation = () => {
   // Check whether it is a desktop or mobile device.
   const x = width >= 1200 ? 0 : "-50%";
@@ -64,7 +82,7 @@ const showNavAnimation = () => {
     duration: 0.8,
     ease: "power4",
     onStart: () => {
-      showOrHideOverlay();
+      showOverlayAnimation();
       toggleScrolling();
       showOrHideNav();
     },
@@ -78,7 +96,7 @@ const hideNavAnimation = () => {
     ease: "power4",
     x: "100%",
     onStart: () => {
-      showOrHideOverlay();
+      hideOverlayAnimation();
       toggleScrolling();
     },
     onComplete: () => {

@@ -157,6 +157,9 @@ textarea {
 .menu-button,
 .nav {
   position: fixed;
+}
+
+.menu-button {
   z-index: 1;
 }
 
@@ -623,9 +626,9 @@ a[href="#greetings"] span {
 
   /* Overlay when using navbar */
   .overlay {
-    width: calc(100% - 760px);
+    width: 100%;
     position: fixed;
-    z-index: 2;
+    z-index: 1;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
