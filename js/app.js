@@ -30,13 +30,23 @@ function addOverlayOnDesktop() {
   }
 }
 
-function showOrHideNav() {
-  navMenu.classList.toggle("show");
+function toggleVisibiltyStatus() {
+  visible = !visible;
+}
+
+function showOrHideOverlay() {
   overlay ? overlay.classList.toggle("show") : null;
-  arrowDown.classList.toggle("vis-hidden");
+}
+
+function toggleScrolling() {
   body.classList.toggle("overf-hidden");
   visible ? disableScrollingOnIOS() : enableScrollingOnIOS();
-  visible = !visible;
+}
+
+function showOrHideNav() {
+  navMenu.classList.toggle("show");
+  arrowDown.classList.toggle("vis-hidden");
+  toggleVisibiltyStatus();
 }
 
 /*

@@ -64,6 +64,8 @@ const showNavAnimation = () => {
     duration: 0.8,
     ease: "power4",
     onStart: () => {
+      showOrHideOverlay();
+      toggleScrolling();
       showOrHideNav();
     },
     x
@@ -75,6 +77,10 @@ const hideNavAnimation = () => {
     duration: 1,
     ease: "power4",
     x: "100%",
+    onStart: () => {
+      showOrHideOverlay();
+      toggleScrolling();
+    },
     onComplete: () => {
       // TODO: make sure that you enable scrolling before navbar is hidden.
       showOrHideNav();
