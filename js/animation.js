@@ -56,6 +56,95 @@ gsap.registerPlugin(ScrollTrigger);
 
 const tl = gsap.timeline({ defaults: { duration: 1, autoAlpha: 0 } });
 
+const showOverlayAnimation = () => {
+  gsap.to(".overlay", {
+    onStart: () => {
+      showOrHideOverlay();
+    },
+    autoAlpha: 1
+  });
+};
+
+const hideOverlayAnimation = () => {
+  gsap.to(".overlay", {
+    autoAlpha: 0,
+    onComplete: () => {
+      showOrHideOverlay();
+    }
+  });
+};
+
+const showNavAnimation = () => {
+  // Check whether it is a desktop or mobile device.
+  const x = width >= 1200 ? 0 : "-50%";
+
+  gsap
+    .timeline({ defaults: { duration: 0.8 } })
+    .to(".nav", {
+      ease: "power4",
+      onStart: () => {
+        showOverlayAnimation();
+        toggleScrolling();
+        showOrHideNav();
+      },
+      x
+    })
+    .from(
+      ".close-button",
+      {
+        ease: "power4.in",
+        autoAlpha: 0
+      },
+      "-=1"
+    )
+    .from(
+      ".nav-list",
+      {
+        ease: "power4.in",
+        autoAlpha: 0
+      },
+      "-=1"
+    )
+    .from(
+      ".nav-social-links-con",
+      {
+        ease: "power4.in",
+        autoAlpha: 0
+      },
+      "-=1"
+    );
+};
+
+const hideNavAnimation = () => {
+  gsap.to(".nav", {
+    duration: 1,
+    ease: "power4",
+    x: "100%",
+    onStart: () => {
+      hideOverlayAnimation();
+      toggleScrolling();
+    },
+    onComplete: () => {
+      // TODO: make sure that you enable scrolling before navbar is hidden.
+      showOrHideNav();
+    }
+  });
+};
+
+document.addEventListener("click", e => {
+  const elementClassList = e.target.classList;
+
+  if (elementClassList.contains("menu-button-img")) {
+    showNavAnimation();
+  } else if (
+    elementClassList.contains("close-button-img") ||
+    elementClassList.contains("nav-link-content") ||
+    elementClassList.contains("overlay")
+  ) {
+    hideNavAnimation();
+  }
+});
+
 tl.to(".loading", {
   y: "-100%",
   delay: 3,
