@@ -78,16 +78,41 @@ const showNavAnimation = () => {
   // Check whether it is a desktop or mobile device.
   const x = width >= 1200 ? 0 : "-50%";
 
-  gsap.to(".nav", {
-    duration: 0.8,
-    ease: "power4",
-    onStart: () => {
-      showOverlayAnimation();
-      toggleScrolling();
-      showOrHideNav();
-    },
-    x
-  });
+  gsap
+    .timeline({ defaults: { duration: 0.8 } })
+    .to(".nav", {
+      ease: "power4",
+      onStart: () => {
+        showOverlayAnimation();
+        toggleScrolling();
+        showOrHideNav();
+      },
+      x
+    })
+    .from(
+      ".close-button",
+      {
+        ease: "power4.in",
+        autoAlpha: 0
+      },
+      "-=1"
+    )
+    .from(
+      ".nav-list",
+      {
+        ease: "power4.in",
+        autoAlpha: 0
+      },
+      "-=1"
+    )
+    .from(
+      ".nav-social-links-con",
+      {
+        ease: "power4.in",
+        autoAlpha: 0
+      },
+      "-=1"
+    );
 };
 
 const hideNavAnimation = () => {
