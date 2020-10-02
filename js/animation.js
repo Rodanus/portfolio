@@ -138,7 +138,8 @@ document.addEventListener("click", e => {
     showNavAnimation();
   } else if (
     elementClassList.contains("close-button-img") ||
-    elementClassList.contains("nav-link-content")
+    elementClassList.contains("nav-link-content") ||
+    elementClassList.contains("overlay")
   ) {
     hideNavAnimation();
   }
