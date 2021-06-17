@@ -287,6 +287,10 @@ a[href="#greetings"] span {
   align-content: center;
 }
 
+.skill-logo {
+  width: 80px;
+}
+
 /*** Projects section ***/
 .project {
   position: relative;
