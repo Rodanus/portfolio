@@ -214,6 +214,10 @@ a[href="#greetings"] span {
   text-transform: capitalize;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .greetings {
   height: 100%;
   flex-direction: column;
@@ -372,18 +376,33 @@ a[href="#greetings"] span {
 }
 
 /* Contact Section */
-.contact-email-con {
+.contact-email-con,
+.cv-con {
   padding: 3rem 0;
 }
 
-.contact-email {
+.contact-email,
+.cv {
   font-size: 1rem;
   text-align: left;
 }
 
-.contact-email-link {
+.contact-email-link .cv-link {
   font-weight: 400;
   text-decoration: none;
+}
+
+.cv-link {
+  text-decoration: none;
+  width: 200px;
+  height: 70px;
+  padding: 13px 15px;
+  background: white;
+  border-radius: 5px;
+  position: relative;
+  color: #000;
+  cursor: pointer;
+  border: 1px solid #000;
 }
 
 /* footer */
@@ -489,6 +508,11 @@ a[href="#greetings"] span {
 
   .project {
     margin-bottom: 0;
+  }
+
+  .cv-link:hover {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
   }
 
   .footer-links-con {
