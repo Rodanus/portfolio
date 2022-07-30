@@ -201,6 +201,10 @@ endOfPageTl
     scale: 0.9,
     autoAlpha: 0
   })
+  .from(".cv-link", {
+    duration: 0.4,
+    autoAlpha: 0
+  })
   .from(".contact-email", {
     duration: 0.4,
     autoAlpha: 0
