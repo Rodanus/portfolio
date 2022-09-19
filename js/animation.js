@@ -201,7 +201,7 @@ endOfPageTl
     scale: 0.9,
     autoAlpha: 0
   })
-  .from(".cv-link", {
+  .from(".resume-link", {
     duration: 0.4,
     autoAlpha: 0
   })

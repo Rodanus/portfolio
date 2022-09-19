@@ -377,22 +377,22 @@ a[href="#greetings"] span {
 
 /* Contact Section */
 .contact-email-con,
-.cv-con {
+.resume-con {
   padding: 3rem 0;
 }
 
 .contact-email,
-.cv {
+.resume {
   font-size: 1rem;
   text-align: left;
 }
 
-.contact-email-link .cv-link {
+.contact-email-link .resume-link {
   font-weight: 400;
   text-decoration: none;
 }
 
-.cv-link {
+.resume-link {
   text-decoration: none;
   width: 200px;
   height: 70px;
@@ -510,7 +510,7 @@ a[href="#greetings"] span {
     margin-bottom: 0;
   }
 
-  .cv-link:hover {
+  .resume-link:hover {
     -webkit-filter: invert(100%);
     filter: invert(100%);
   }
