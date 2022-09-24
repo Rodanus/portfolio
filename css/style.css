@@ -375,7 +375,7 @@ a[href="#greetings"] span {
   justify-content: space-between;
 }
 
-/* Contact Section */
+/* Contact & Resume Sections */
 .contact-email-con,
 .resume-con {
   padding: 3rem 0;
@@ -390,19 +390,6 @@ a[href="#greetings"] span {
 .contact-email-link .resume-link {
   font-weight: 400;
   text-decoration: none;
-}
-
-.resume-link {
-  text-decoration: none;
-  width: 200px;
-  height: 70px;
-  padding: 13px 15px;
-  background: white;
-  border-radius: 5px;
-  position: relative;
-  color: #000;
-  cursor: pointer;
-  border: 1px solid #000;
 }
 
 /* footer */
@@ -510,9 +497,9 @@ a[href="#greetings"] span {
     margin-bottom: 0;
   }
 
+  .contact-email-link:hover,
   .resume-link:hover {
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
+    text-decoration: none;
   }
 
   .footer-links-con {
@@ -720,8 +707,9 @@ a[href="#greetings"] span {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  /* Contact section  */
-  .contact-email-link {
+  /* Contact & Resume sections  */
+  .contact-email-link,
+  .resume-link {
     font-size: 1.2rem;
   }
 }
@@ -733,7 +721,7 @@ a[href="#greetings"] span {
   opacity: 1;
 }
 
-/* To hide elemnt by visibility */
+/* To hide element by visibility */
 .vis-hidden {
   visibility: hidden;
 }
